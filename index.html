@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <style>
+        .test {
+            background: red;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Module Test</title>
+</head>
+<body>
+
+<pre><code>
+    Code Example
+</code></pre>
+
+<!-- Using JSDoc comments to define the custom element -->
+<script>
+    /**
+     * @typedef {HTMLElementTagNameMap & {
+     *   'user-calendar': UserCalendar;
+     * }} ExtendedHTMLElementTagNameMap
+     */
+</script>
+
+<users-element data-users> </users-element>
+<users-element data-users data-filter='Andy2, Andy32'> </users-element>
+
+<script type="module">
+    import './users/component.js';
+
+</script>
+</body>
+</html>
