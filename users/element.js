@@ -11,7 +11,7 @@ class CustomElement extends HTMLElement {
 
     style() {
         const styleSheet = new CSSStyleSheet();
-        styleSheet.insertRule('span { background: blue; color: white; }');
+        styleSheet.insertRule('span { background: var(--primary); color: var(--text); }');
         return styleSheet;
     }
 
